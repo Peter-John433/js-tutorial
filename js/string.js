@@ -46,3 +46,19 @@ console.log( myString7 );
 
 
 // STRING METHODS
+
+//string length 
+//this check the length of the string
+let yoyo = 'bringmebackhome';
+let yoyo1 = yoyo.length; 
+console.log( yoyo1 );
+
+//
+let myName = 'hello world';
+let myName1 = myName.charAt(0); //charAt() method
+ myName1 = myName.charCodeAt(0); // charCodeAt() method
+ myName1 = myName.at() // at() method
+ myName1 = myName[0] // property access
+console.log( myName.length ); // length property
+console.log( myName1 );
+
