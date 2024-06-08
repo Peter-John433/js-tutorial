@@ -53,7 +53,12 @@ let yoyo = 'bringmebackhome';
 let yoyo1 = yoyo.length; 
 console.log( yoyo1 );
 
-//
+// there are four methods for extracting string character this includes:
+// 1. at()
+// 2. charAt() 
+// 3. charCodeAt() 
+// 4. property access []
+
 let myName = 'hello world';
 let myName1 = myName.charAt(0); //charAt() method
  myName1 = myName.charCodeAt(0); // charCodeAt() method
@@ -62,3 +67,43 @@ let myName1 = myName.charAt(0); //charAt() method
 console.log( myName.length ); // length property
 console.log( myName1 );
 
+// there are three methods for extracting part of a string, this includes:
+// 1. slice()
+// 2. substring()
+// 3. substr()
+
+//slice() method
+let memefi = 'mango, orange, banana';
+let jojo = memefi.slice(6); //one param
+    jojo = memefi.slice(7, 13); // two param
+    jojo = memefi.slice(-6); // one negative param
+    jojo = memefi.slice(-14, -8); // two negative param
+    jojo = memefi.substring(7, 13 ); // work same as slice () with a slight diff.
+console.log(jojo);
+
+// converting to upper or lowercase
+
+let myName2 = 'john';
+let myName3 = myName2.toUpperCase(); //touppercase
+ myName3 = myName2.toLowerCase(); //tolowercase
+console.log(myName3);
+
+// string concatenation
+
+let jonjo = 'good morning';
+let jonjo1 = 'mr abel';
+let jonjo2 = jonjo.concat(' ', jonjo1);
+console.log(jonjo2);
+
+// string trim method
+
+// the trim() method is use to remove whitspace from the string
+// trimStart() method is use to remove whitespace from the start of a string
+// trimEnd() method is use to remove whitespace from the end of a string
+
+let myTrim = ' hello ';
+let myTrim1 = myTrim.length;
+let myTrim2 = myTrim.trim(); // trim()
+let myTrim3 = myTrim.trimStart(); //trimStart()
+let myTrim4 = myTrim.trimEnd(); //trimEnd()
+console.log(myTrim1, myTrim2, myTrim, myTrim2.length, myTrim3, myTrim4);
