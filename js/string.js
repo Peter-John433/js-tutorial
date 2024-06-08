@@ -107,3 +107,78 @@ let myTrim2 = myTrim.trim(); // trim()
 let myTrim3 = myTrim.trimStart(); //trimStart()
 let myTrim4 = myTrim.trimEnd(); //trimEnd()
 console.log(myTrim1, myTrim2, myTrim, myTrim2.length, myTrim3, myTrim4);
+
+// string padding 
+// means to pad a string with another string untill it reaches a specific length 
+// we have padStart() method and padEnd() method
+
+let myPad = 'hello';
+let myPad1 = myPad.padStart(7, '9');
+let myPad2 = myPad.padEnd(9, '*');
+console.log(myPad1, myPad2);
+
+// string repeat() method
+
+// the repeat method is used to return a copy of a string until it reaches the given length
+
+let myRepeat = 'hello world';
+let myRepeat1 = myRepeat.repeat(5);
+console.log(myRepeat1);
+
+// string replace() method
+
+// the replace() method is use to replace a given value with a new string value
+// the replace method only replace the first match 
+// the replace method is case sensitive
+// to replace all matches use /g flag expression 
+// to replace case insensitive use /i flag expression 
+// since is case sensitive mango and MANGO will not work 
+// replace method as two params, 1st is the given value, 2nd is the value to be replace with
+// regular expressions are written without quotes
+
+let myMan = 'this is mango,i love eating mango alot';
+let myMan1 = myMan.replace('mango', 'orange'); // replace the first match
+console.log(myMan1);
+let myMan2 = myMan.replace(/MANGO/i, 'orange'); // insensitive expression
+console.log(myMan2);
+
+let myMan3 = myMan.replace(/mango/g, 'orange'); // global match expression
+console.log(myMan3);
+
+// string search methods
+
+// indexOf() method
+// indexOf() return the index position of the first occurance of a string in a string
+
+let myIndex = 'please can you come to my place, i don\'t like coming to your \"place\"';
+let myIndex1 = myIndex.indexOf('place');
+console.log(myIndex1);
+
+// lastIndexOf() method
+
+//lastIndexOf() returns the last index position of a given string in a string
+let myIndex2 = 'please can you come to my place, i don\'t like coming to your \"place\"';
+let myIndex3 = myIndex2.lastIndexOf('place');
+let myIndex4 = myIndex2.replace(/place/g, 'plane' )
+console.log(myIndex3, myIndex4);
+
+// search method 
+
+//search() is use to search a string for a string or (regular expression) and return the position of a match 
+let mySearch = 'let your name be glorify';
+let mySearch1 = mySearch.search(/name/);
+console.log(mySearch1)
+
+/*
+note:
+both indexOf and search methods have similar work with slight difference
+
+difference
+
+1 indexof can not hold regular expression 
+2. search do not use second params
+*/
+
+// match method
+
+//match() this is use to match a sting against a string and return an array containing the matching string
