@@ -182,3 +182,95 @@ difference
 // match method
 
 //match() this is use to match a sting against a string and return an array containing the matching string
+
+let myMar = 'The rain in SPAIN stays mainly in the plain';
+let myMar1 = myMar.match('ain'); 
+myMar1 = myMar.match(/ain/g); // global search
+myMar1 = myMar.match(/ain/i); // insensitive
+myMar1 = myMar.match(/ain/gi); // global and insensitve search
+console.log(myMar1);
+
+//note: if the /g is not use it will reutrn only the first match
+
+// matchAll() method
+
+//matchAll() is use to match a string againts a string and return an array containing all the matching string
+
+let doom = 'The rain in SPAIN stays mainly in the plain';
+let doo1 = doom.matchAll('ain')
+console.log(Array.from(doo1));
+
+//includes()
+
+//includes methods return true if a string contain a given string value else return false
+// it's case sensitive
+
+let manny = 'The rain in SPAIN stays mainly in the plain';
+let manny1 =  manny.includes('SPAIN');
+console.log(manny1);
+
+//startWith() method
+
+// startWith() return true if the string start with a given value else return false
+// this is case sensitive 
+
+let geo = 'The rain in SPAIN stays mainly in the plain';
+let geo1 = geo.startsWith('The'); 
+console.log(geo1);
+
+let geo2 = 'The rain in SPAIN stays mainly in the plain';
+let geo3 = geo2.startsWith('rain', 4); //4 represent the start position 
+console.log(geo3);
+
+// endWith() method
+
+//endWith return true if the string end with a given value else return false
+// also case sensitive
+
+let hug = 'hello world, this is aisha';
+let hug1 = hug.endsWith('aisha');
+console.log(hug1)
+
+// TEMPLATE STRING
+
+//it can be call template string, string template or template literals all mean same thing
+// template string use backticks ``;
+
+let momo = `hello world`;
+console.log(momo);
+
+// template string allow both double and single quotes
+
+let momo1 = `this wasn't the plan but it's okay, "john"`;
+console.log(momo1);
+
+// template string allow multiline
+let momo2 = `
+ hey,
+ what are you 
+ doing over there.
+`;
+
+console.log(momo2);
+
+// allow variables to be use along side values
+// this is also called string interpolation
+
+let momo3 = `john`;
+let momo4 = `i hate it ${momo3}`;
+console.log(momo4);
+
+// this also allow expressions
+
+let momo5 = 4;
+let momo6 = `price: ${ 5 + 5 + momo5}`;
+console.log(momo6);
+
+// also allow html templates 
+
+let myScene = `template`;
+let myArr = ['milk', 'bonvita', 'coffe'];
+let myTom = `<h1> ${myScene} </h1>`;
+console.log(myTom);
+let gee = document.querySelector('section');
+gee.innerHTML = `<h1> ${myScene} </h1>`;
